@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Nojo 💙</title>
+</head>
+<body style="margin:0; padding:0; display:flex; align-items:center; justify-content:center; height:100vh; background:linear-gradient(135deg,#fbc2eb,#a6c1ee); font-family:sans-serif; text-align:center; overflow:hidden;">
+
+  <div style="background:white; padding:40px; border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,0.2); max-width:500px;">
+    <h1 style="color:#e63946; margin-bottom:20px;">Hi Nojo 👋</h1>
+    <p id="typewriter" style="font-size:18px; color:#333; line-height:1.6; white-space:pre-line;"></p>
+    <a href="page2.html" style="display:inline-block; margin-top:20px; padding:12px 25px; background:#e63946; color:white; border-radius:10px; text-decoration:none; font-weight:bold;">Next ➡️</a>
+  </div>
+
+  <script>
+    let text = "This is not just a webpage... it’s my heart speaking to you. 💙\nWalk with me through these pages.";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typewriter").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      }
+    }
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>
